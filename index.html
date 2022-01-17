@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hello World</title>
+  <link rel="stylesheet" href="public/index.css" />
+</head>
+<body>
+  <canvas id="pixiCanvas" width = "800" height = "600"></canvas>
+  <script src="public/imgui.umd.js"></script>
+  <script src="public/imgui_impl.umd.js"></script>
+  <script src="public/pixi.min.js"></script>
+  <script src="public/pixi_test.js"></script>
+  <script src="public/viewport.min.js"></script>
+  <script src="public/pixi_bunnies.js"></script>
+</body>
+</html>
+
+<!--
+  I need to keep in mind that HTML is executed in order!
+  I didn't define the canvas before I was calling the pixi bunnies javascript - therefore, I was not able to render
+  onto the pixiCanvas.
+  https://stackoverflow.com/questions/8739605/getelementbyid-returns-null
+-->
